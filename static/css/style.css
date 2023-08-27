@@ -45,9 +45,15 @@ body {
     height: 50px;
 }
 
+.placeholder-50 {
+    height: 20px;
+}
 @media (min-width: 768px) {
     .placeholder-150 {
         height: 150px;
+    }
+    .placeholder-50 {
+        height: 50px;
     }
 }
 

@@ -63,3 +63,17 @@
     font-weight: 400;
     line-height: 26px;
 }
+
+.btn__icon {
+    display: block;
+    flex-direction: row;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    
+    .btn__icon__google {
+        content: ' ';
+        background-image: url('../img/svg/devicon_google.svg');
+    }
