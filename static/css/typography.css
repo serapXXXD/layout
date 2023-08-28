@@ -13,13 +13,11 @@
 }
 
 @media (min-width: 768px) {
-    .main-header{
-        
-    }
+    .main-header {}
 }
 
 @media (min-width: 992px) {
-    .main-header{
+    .main-header {
         font-size: 73px;
     }
 }
@@ -62,4 +60,26 @@
 
 .text-bold {
     font-weight: 600;
+}
+
+.text-feed {
+    display: block;
+    padding-top: 24px;
+    padding-left: 24px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+
+}
+
+.text-sheet {
+    color: #515151;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
 }

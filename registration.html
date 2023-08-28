@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="navbar-wrapper">
         <nav class="navbar">
@@ -15,7 +17,7 @@
             <div class="login-wrapper">
                 <a class="login" href="index.html">login</a> <b class="login">or</b> <a class="login"
                     href="registration.html">Signup</a>
-                <button class="login-btn"></button>
+                <button class="login-btn button-pic"></button>
 
             </div>
 
@@ -25,7 +27,7 @@
 
         <section class="grid-section">
             <div class="card">
-                <div class="card__header">
+                <div>
                     <h1 class="header">Create an account</h1>
                     <h4 class="header-secondary">Let&rsquo; blog it with Quilog</h4>
                 </div>
@@ -41,17 +43,19 @@
                             <input class="input" type="password" placeholder="Password">
                         </div>
                         <div class="placeholder placeholder-50"></div>
-                        <div class="input-wrapper">
+                    </form>
+                        <div class="input-wrapper" onclick="window.location.href='feed.html'">
                             <button class="btn">Create account</button>
                         </div>
                         <div class="input-wrapper">
-                            <button class="btn"><i class="btn__icon btn__icon__google"></i>Sign up with google</button>
+                            <button class="btn" onclick="window.location.href='feed.html'">
+                                <i class="btn__icon btn__icon__google"></i>Sign up with google
+                            </button>
                         </div>
                         <div>
                             <p class="text text-center">Already have account? <a class="text text-bold"
                                     href="index.html">Login</a></p>
                         </div>
-                    </form>
                 </div>
                 <div class="card__footer"></div>
             </div>
@@ -67,4 +71,5 @@
 
     </main>
 </body>
+
 </html>

@@ -65,15 +65,43 @@
 }
 
 .btn__icon {
-    display: block;
-    flex-direction: row;
+    display: inline-block;
     width: 20px;
     height: 20px;
+    vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center;
-    }
-    
-    .btn__icon__google {
-        content: ' ';
-        background-image: url('../img/svg/devicon_google.svg');
-    }
+    margin-right: 8px;
+}
+
+.btn__icon__google {
+    content: ' ';
+    background-image: url('../img/svg/devicon_google.svg');
+}
+
+.elements {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.element-1{
+    content: ' ';
+    background-image: url('../img/svg/like.svg');
+    padding: 0 12px;
+}
+
+.element-2{
+    content: ' ';
+    background-image: url('../img/svg/comment.svg');
+    padding: 0 12px;
+}
+
+.element-3{
+    content: ' ';
+    background-image: url('../img/svg/share.svg');
+    padding: 0 12px;
+}

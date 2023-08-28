@@ -48,10 +48,12 @@ body {
 .placeholder-50 {
     height: 20px;
 }
+
 @media (min-width: 768px) {
     .placeholder-150 {
         height: 150px;
     }
+
     .placeholder-50 {
         height: 50px;
     }
@@ -64,18 +66,46 @@ body {
     padding: 51px;
 }
 
-.card__header {}
+.card-feed {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 2px rgba(151, 151, 151, 0.25);
+    padding: 15px;
+    margin: 24px;
+}
 
-.card__body {}
+@media (min-width: 768px) {
+    .card-feed {
+        padding: 51px;
+        margin: 42px;
+    }
+}
 
-.card__footer {}
 
-.grid-section{
+.card__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__body {
+    display: block;
+    margin: 20px 0;
+}
+
+.card__footer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.grid-section {
     display: flex;
     flex-direction: column-reverse;
 }
 
-.super__picture__2{
+.super__picture__2 {
     display: none;
 }
 
@@ -84,7 +114,8 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .super__picture__2{
+
+    .super__picture__2 {
         display: block;
     }
 }
@@ -96,8 +127,56 @@ body {
 }
 
 @media (min-width: 1200px) {
-    .grid-section {
+    .grid-section {}
+}
 
+
+.frame {
+    margin-left: auto;
+    margin-right: auto;
+    width: 313px;
+
+    height: 100%;
+    border: 2px solid #9B9898;
+    border-top: none;
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 2px 3px 2px rgba(155, 152, 152, 0.30);
+    backdrop-filter: blur(5px);
+}
+
+@media (min-width: 768px) {
+    .frame{
+        width: 552px;
     }
 }
 
+@media (min-width: 992px) {
+    .frame{
+        width: 752px;
+    }
+}
+
+
+.button-foto{
+    background-image: url('../img/svg/Ellipse2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size: contain;
+}
+
+.button-foto2{
+    background-image: url('../img/svg/Ellipse4.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size: contain;
+}
+
+.button-foto3{
+    background-image: url('../img/svg/Ellipse6.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size: contain;
+}

@@ -91,12 +91,18 @@
     border: 2px solid;
     border-color: #CDCCCC;
     border-radius: 50%;
+
+}
+
+.button-pic{
     background-image: url('../img/svg/profile.svg');
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
     background-size: contain;
 }
+
+
 
 @media (min-width: 768px) {
     .login{
@@ -115,4 +121,10 @@
         width: 70px;
         height: 70px;
     }
+}
+
+.cut-line{
+    width: 100%;
+    background: #9B9898;
+    height: 2px;
 }
