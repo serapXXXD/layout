@@ -12,11 +12,23 @@ body {
     min-height: 100vh;
 }
 
+button {
+    transition: 250ms;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.sticky-position{
+    position: sticky;
 }
 
 @media (min-width: 768px) {

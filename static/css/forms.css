@@ -91,17 +91,20 @@
 .element-1{
     content: ' ';
     background-image: url('../img/svg/like.svg');
-    padding: 0 12px;
+    padding: 0 15px;
+    background-color: #FFF;
 }
 
 .element-2{
     content: ' ';
     background-image: url('../img/svg/comment.svg');
-    padding: 0 12px;
+    padding: 0 15px;
+    background-color: #FFF;
 }
 
 .element-3{
     content: ' ';
     background-image: url('../img/svg/share.svg');
-    padding: 0 12px;
+    padding: 0 15px;
+    background-color: #FFF;
 }
