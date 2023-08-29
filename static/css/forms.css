@@ -79,7 +79,7 @@
     background-image: url('../img/svg/devicon_google.svg');
 }
 
-.elements {
+.card__footter__button {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -88,21 +88,21 @@
     background-position: center;
 }
 
-.element-1{
+.card__footter__button__like{
     content: ' ';
     background-image: url('../img/svg/like.svg');
     padding: 0 15px;
     background-color: #FFF;
 }
 
-.element-2{
+.card__footter__button__comment{
     content: ' ';
     background-image: url('../img/svg/comment.svg');
     padding: 0 15px;
     background-color: #FFF;
 }
 
-.element-3{
+.card__footter__button__share{
     content: ' ';
     background-image: url('../img/svg/share.svg');
     padding: 0 15px;

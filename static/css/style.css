@@ -177,25 +177,91 @@ button:hover {
 
 
 .button-foto {
-    background-image: url('../img/svg/Ellipse2.svg');
+
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
     background-size: contain;
 }
 
-.button-foto2 {
-    background-image: url('../img/svg/Ellipse4.svg');
-    background-repeat: no-repeat;
+.like-foto {
+    width: 45px;
+    height: 45px;
     background-position: center;
-    overflow: hidden;
-    background-size: contain;
+    border-radius: 50%;
+    background: lightgray 50% / cover no-repeat, #FFF;
+    box-shadow: 0px 0px 3px 0px rgba(220, 220, 220, 0.50);
 }
 
-.button-foto3 {
-    background-image: url('../img/svg/Ellipse6.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    background-size: contain;
+.likes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.likes__like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.button__like__pressed {
+    position: relative;
+    background-image: url('../img/svg/blacklike.svg');
+}
+
+.button__like__pressed::after {
+    display: block;
+    content: ' ';
+    height: 1px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    bottom: -2px;
+    left: 4px;
+}
+
+.button__comment__pressed {
+    position: relative;
+    background-image: url('../img/svg/blackcomment.svg');
+}
+
+.button__comment__pressed::after {
+    display: block;
+    content: ' ';
+    height: 1px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    bottom: -2px;
+    left: 4px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-field {
+    width: 559px;
+    height: 32px;
+    border-radius: 50px;
+    border: 1px solid #9B9898;
+    background: #FFF;
+}
+
+.comment-card {
+    width: 507px;
+    height: 93px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 2px rgba(151, 151, 151, 0.25);
+    padding: 15px;
+
 }

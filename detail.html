@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="navbar-wrapper">
         <nav class="navbar">
@@ -14,7 +16,8 @@
             </div>
             <div class="login-wrapper">
                 <a class="login" href="#">Hey, Niraj</a>
-                <button class="login-btn button-foto" onclick="window.location.href='#'"></button>
+                <button class="login-btn button-foto" style="background-image: url('./static/img/svg/Ellipse2.svg');"
+                    onclick="window.location.href='#'"></button>
             </div>
 
         </nav>
@@ -23,10 +26,12 @@
 
     <main class="container">
         <section class="frame">
-            <b class="text-feed">Feed</b>
+            <b class="text-feed"><a href="feed.html">Feed</a></b>
             <div class="card-feed ">
                 <div class="card__header">
-                    <button class="login-btn button-foto2" onclick="window.location.href='#'"></button>
+                    <button class="login-btn button-foto"
+                        style="background-image: url('./static/img/svg/Ellipse4.svg');"
+                        onclick="window.location.href='#'"></button>
                     <b class="login">Bishal bhattacharjee</b>
                 </div>
 
@@ -43,15 +48,86 @@
                 </div>
                 <div class="card__footer_elements">
                     <div class="card__footer">
-                        <button class="elements element-1" onclick="window.location.href='#'"></button>
+                        <!-- поменять названия классов у кнопок -->
+                        <button class="card__footter__button card__footter__button__like " id="likeButton"
+                            onclick="toggleLike('likes', 'likeButton')"></button>
                         <b class="text-sheet">50</b>
-                        <button class="elements element-2" onclick="window.location.href='#'"></button>
+
+
+                        <button class="card__footter__button card__footter__button__comment" id="commentButton"
+                            onclick="toggleComment('comments', 'commentButton')"></button>
                         <b class="text-sheet">10</b>
-                        <button class="elements element-3" onclick="window.location.href='#'"></button>
+
+
+                        <button class="card__footter__button card__footter__button__share" id="shareButton"
+                            onclick="window.location.href='#'"></button>
                     </div>
                 </div>
+                <div class="likes hidden" id="likes">
+                    <div><b class="text-sheet">All Likes</b></div>
+
+                    <div class="likes__like">
+                        <div class="like-foto" style="background-image: url('./static/img/svg/Ellipse\ 1115.svg');">
+                        </div>
+                        <b class="text-sheet">Megan</b>
+                    </div>
+
+                    <div class="likes__like">
+                        <div class="like-foto" style="background-image: url('./static/img/svg/Ellipse\ 1115.svg');">
+                        </div>
+                        <b class="text-sheet">Megan</b>
+                    </div>
+                    <div class="likes__like">
+                        <div class="like-foto" style="background-image: url('./static/img/svg/Ellipse\ 1115.svg');">
+                        </div>
+                        <b class="text-sheet">Megan</b>
+                    </div>
+                    <div class="likes__like">
+                        <div class="like-foto" style="background-image: url('./static/img/svg/Ellipse\ 1115.svg');">
+                        </div>
+                        <b class="text-sheet">Megan</b>
+                    </div>
+                </div>
+
+
+                <div class="likes hidden" id="comments">
+                    <div class="input-wrapper ">
+                        <!-- не придумал как "|" сдвиануть немного влево -->
+                        <input class="comment-field add__comment__text" type="text" placeholder="Add your comment">
+                    </div>
+                    <div class="likes__like">
+                        <div class="like-foto" style="background-image: url('./static/img/svg/Ellipse\ 1118.svg');">
+                        </div>
+                        <b class="comment__text__name">Jessica</b><b class="comment__text__date">3 july</b>
+                        <!-- не придумал как правильно расположить -->
+                        <div class="comment-card"> <b class="comment__text__date">Great job on your post! It's clear and well-explained. Keep up the
+                                good work!
+                            </b></div>
+                    </div>
+                    <div class="likes__like">
+                        <div class="like-foto" style="background-image: url('./static/img/svg/Ellipse\ 1118.svg');">
+                        </div>
+                        <b class="comment__text__name">Jessica</b><b class="comment__text__date">3 july</b>
+                        <!-- не придумал как правильно расположить -->
+                        <div class="comment-card"> <b class="comment__text__date">Great job on your post! It's clear and well-explained. Keep up the
+                                good work!
+                            </b></div>
+                    </div>
+                    <div class="likes__like">
+                        <div class="like-foto" style="background-image: url('./static/img/svg/Ellipse\ 1118.svg');">
+                        </div>
+                        <b class="comment__text__name">Jessica</b><b class="comment__text__date">3 july</b>
+                        <!-- не придумал как правильно расположить -->
+                        <div class="comment-card"> <b class="comment__text__date">Great job on your post! It's clear and well-explained. Keep up the
+                                good work!
+                            </b></div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
+    <script src="./static/js/main.js"></script>
 </body>
+
 </html>
