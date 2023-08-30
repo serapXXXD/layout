@@ -12,10 +12,6 @@
     margin-bottom: 16px;
 }
 
-@media (min-width: 768px) {
-    .main-header {}
-}
-
 @media (min-width: 992px) {
     .main-header {
         font-size: 73px;
@@ -133,4 +129,60 @@
     font-weight: 600;
     line-height: 22px;
     letter-spacing: -0.408px;
+}
+
+.profile__text__edit {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.profile__text__name {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.profile__text__description {
+    color: #515151;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.profile__text__my_post {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.profile__text__digits {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.profile__text__sotial {
+    color: #515151;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
 }

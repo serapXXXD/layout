@@ -28,6 +28,7 @@ button:hover {
     margin-left: auto;
 }
 
+
 .sticky-position {
     position: sticky;
 }
@@ -36,18 +37,21 @@ button:hover {
     .container {
         width: 750px;
     }
+
 }
 
 @media (min-width: 992px) {
     .container {
         width: 970px;
     }
+
 }
 
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
+
 }
 
 .placeholder {
@@ -87,6 +91,14 @@ button:hover {
     margin: 24px;
 }
 
+.card__feed__profile {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 2px rgba(151, 151, 151, 0.25);
+    padding: 24px;
+    margin: 24px;
+}
+
 @media (min-width: 768px) {
     .card-feed {
         padding: 51px;
@@ -118,6 +130,14 @@ button:hover {
     flex-direction: row;
     gap: 3px;
     width: 100%;
+    align-items: center;
+}
+
+.card__footer__feed {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+
     align-items: center;
 }
 
@@ -156,10 +176,20 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     width: 313px;
-
     height: 100%;
     border: 2px solid #9B9898;
     border-top: none;
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 2px 3px 2px rgba(155, 152, 152, 0.30);
+    backdrop-filter: blur(5px);
+}
+
+.frame__profile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+    height: 100%;
+    border: 1px solid #9B9898;
     background: rgba(255, 255, 255, 0.50);
     box-shadow: 0px 2px 3px 2px rgba(155, 152, 152, 0.30);
     backdrop-filter: blur(5px);
@@ -180,7 +210,6 @@ button:hover {
 
 
 .button-foto {
-
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
@@ -293,10 +322,77 @@ button:hover {
 }
 
 
-.share__frame__item{
+.share__frame__item {
     padding: 4px 18px;
 }
 
-.share__frame__item:not(:last-child){
+.share__frame__item:not(:last-child) {
     border-right: 0.5px solid #9B9898;
+}
+
+.profile__edit {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.profile__foto {
+    width: 280px;
+    height: 270px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #CDCCCC;
+    background-size: 100%;
+    margin: 30px;
+}
+
+.profile__main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.profile__social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFF;
+    margin: 8px;
+}
+
+.profile__footer{
+    display: flex;
+    flex-direction: column;
+    margin-left:40px ;
+}
+
+.profile__social__btn{
+    background-color: #FFF;
+}
+
+.whatsapp {
+    content: ' ';
+    background-image: url('../img/svg/sotial/whatsapp.svg');
+}
+
+.fasebook {
+    content: ' ';
+    background-image: url('../img/svg/sotial/facebook.svg');
+}
+
+.linkedin {
+    content: ' ';
+    background-image: url('../img/svg/sotial/linkedin.svg');
+}
+
+.instagram {
+    content: ' ';
+    background-image: url('../img/svg/sotial/instagram.svg');
+}
+
+.twitter {
+    content: ' ';
+    background-image: url('../img/svg/sotial/twitter.svg');
 }
