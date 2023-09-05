@@ -7,10 +7,25 @@
 
 
 body {
-    background-image: url('../img/svg/background.svg');
+    /* background-image: url('../img/svg/background.svg');
     background-size: 100%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     min-height: 100vh;
+}
+
+.background {
+    background-image: url('../img/svg/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    min-height: 100vh;
+    z-index: -1;
+    width: 100%;
+
+}
+
+header main footer {
+    z-index: 1;
 }
 
 button {
@@ -167,8 +182,7 @@ button:hover {
     }
 }
 
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
 
 
 .frame {
@@ -228,9 +242,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-height: 100%;
+    transition: height 250ms ease-in;
 }
-
-
 
 .likes__like {
     display: flex;
@@ -240,7 +254,10 @@ button:hover {
 }
 
 .hidden {
-    display: none !important;
+    /* display: none !important; */
+    max-height: 0;
+    overflow: hidden;
+    transition: height 250ms ease-out;
 }
 
 .button__like__pressed {
@@ -307,7 +324,6 @@ button:hover {
     gap: 10px;
 }
 
-
 .share__frame {
     display: flex;
     flex-direction: row;
@@ -319,7 +335,6 @@ button:hover {
     background: #FFF;
     overflow: hidden;
 }
-
 
 .share__frame__item {
     padding: 4px 18px;
@@ -361,13 +376,13 @@ button:hover {
     margin: 8px;
 }
 
-.profile__footer{
+.profile__footer {
     display: flex;
     flex-direction: column;
-    margin-left:40px ;
+    margin-left: 40px;
 }
 
-.profile__social__btn{
+.profile__social__btn {
     background-color: #FFF;
 }
 
@@ -396,7 +411,7 @@ button:hover {
     background-image: url('../img/svg/sotial/twitter.svg');
 }
 
-.profile__social__share{
+.profile__social__share {
     display: inline-block;
     width: 25px;
     height: 25px;
