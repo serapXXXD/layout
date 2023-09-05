@@ -168,7 +168,6 @@ button:hover {
 }
 
 @media (min-width: 1200px) {
-    .grid-section {}
 }
 
 
@@ -395,4 +394,25 @@ button:hover {
 .twitter {
     content: ' ';
     background-image: url('../img/svg/sotial/twitter.svg');
+}
+
+.profile__social__share{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFF;
+    margin: 8px;
+}
+
+.share__whatsapp {
+    content: ' ';
+    background-image: url('../img/svg/sotial/iconsWA24px.png');
+}
+
+.share__telegram {
+    content: ' ';
+    background-image: url('../img/svg/sotial/iconsTG24px.svg');
 }
